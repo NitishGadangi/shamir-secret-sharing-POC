@@ -8,7 +8,7 @@ The applet forms 4 shares where the secret can be reconstructed from any 2 share
 By default a secret key is already defiled in the code.
 And reconstruction can be done by using any two shares. By default reconstruction is done using share3 & share4.
 Refer comments within the code for more explanation.<br>
-![main_code]()
+![main_code](https://github.com/NitishGadangi/cypherock_challenge/blob/master/main_code.jpg?raw=true)
 
 ## Instructions
 - Clone or download the repository
@@ -25,4 +25,4 @@ python sss_with_gf256.py
 Here is a snippet for output for the default input.<br>
 you can customise the input by editing the inputs within the code.<br>
 Refer comments in the code for more info<br>
-![Output]()
+![Output](https://github.com/NitishGadangi/cypherock_challenge/blob/master/output.jpg?raw=true)
