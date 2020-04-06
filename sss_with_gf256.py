@@ -23,7 +23,7 @@ def y_x(a0,a1,x):
 
 #lagranges function used for reconstruction
 def lagrange(x0,x1,y0,y1):
-	#havent done the mod operation using a prime number, how ever can be done if required
+	#havent done the mod operation using a prime number,how ever can be done if required
 	return int(((GF256(0)-(GF256(x1))/(GF256(x0)-GF256(x1)))*GF256(y0))+((GF256(0)-(GF256(x0))/(GF256(x1)-GF256(x0)))*GF256(y1)))
 
 def re_construct(share1,share2):
@@ -51,15 +51,15 @@ def generate_shares(secret,random_a1):
 
 if __name__=="__main__":
 	#list of secret keys
-	secret=[224,181,214,219,12,53,89,154,24,137,252,189,224,203,126,98,76,163,46,126,149,108,18,109,239,225,130,7,52,212]
+	secret=[152,115,147,193,161,68,64,121,166,171,81,154,136,118,93,133,118,63,51,128,138,160,208,186,147,72,174,92,65,154]
 	print(f"secret: {secret}\n")
 	#generate shares
-	#here 256 is chosen, you can change it with any number required based on finite field
+	#here 256 is chosen,you can change it with any number required based on finite field
 	share1,share2,share3,share4=generate_shares(secret,random.randrange(253))
 	print(f"share1: {share1}")
 	print(f"share2: {share2}")
 	print(f"share3: {share3}")
 	print(f"share4: {share4}")
 	#reconstructing using any of the two shares
-	#you can change shares, for instance here I opted to go with share 3 and 4
+	#you can change shares,for instance here I opted to go with share 3 and 4
 	re_construct(share3,share4)
