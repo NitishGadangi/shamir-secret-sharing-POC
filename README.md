@@ -1,5 +1,7 @@
 # cypherock_challenge
-My solutions to the cypherock challenge.
+My solutions to the cypherock challenge. ```Figure Out SSS Problem Code: CTS1```
+
+Refer [sss_with_gf256.py](https://github.com/NitishGadangi/cypherock_challenge/blob/master/sss_with_gf256.py) for the code
 
 Used [GF256 library](https://gf256.readthedocs.io/en/stable/) for making operations over Galois Field(256).
 
