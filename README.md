@@ -1,6 +1,11 @@
-# Shamir Secret Sharing Script (Basic Implementation)
+# Shamir Secret Sharing Script (Proof of concept)
+> The following is POC for the final implementation of **IMPLEMENTATION OF DECENTRALIZED CRYPTOGRAPHY USING SHAMIR’S SECRET SHARING ALGORITHM**\
+> Refer [Abstract](https://drive.google.com/file/d/1BwWNukhCzudKV-HLcWjA1MOBU5-4-L9i/view?usp=sharing)\
+> Refer [Presentation](https://docs.google.com/presentation/d/1IfXUM3wsqyomAc2kSH85iHgI3jhYai2Tr9b2mWgTAwA/edit?usp=sharing)\
+> Complete Documentation and Codebase (of final implementation) will be opensourced soon.
 
-Aim: To create a program implementing Shamir Secret Sharing Algorithm with the following features:
+
+**Aim of this poc**: To create a program implementing Shamir Secret Sharing Algorithm with the following features:
 ```
 The applet should accept a byte array of size 32. 
 For eg - private byte[] secret = new byte[32]; 
