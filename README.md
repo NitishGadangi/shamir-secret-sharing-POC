@@ -1,9 +1,18 @@
-# cypherock_challenge
-My solutions to the cypherock challenge. ```Figure Out SSS Problem Code: CTS1```
+# Shamir Secret Sharing Script (Basic Implementation)
 
-> Question will be added here later
+Aim: To create a program implementing Shamir Secret Sharing Algorithm with the following features:
+```
+The applet should accept a byte array of size 32. 
+For eg - private byte[] secret = new byte[32]; 
+The applet should form 4 shares where the secret could be reconstructed from any 2 shares. 
+Apply Shamir secret sharing scheme to each byte separately and use Galois Field(256) as the underlying finite field. 
+Y coordinate corresponding to the same X coordinates shall be stored in the same byte array for each share. 
+The applet should accept M number of byte array and reconstruct the original secret using Shamir’s Algorithm. 
+Notes: No external library (accept for generating random numbers) shall be used.
+```
 
-Refer [sss_with_gf256.py](https://github.com/NitishGadangi/cypherock_challenge/blob/master/sss_with_gf256.py) for the code
+
+Refer [sss_with_gf256.py](/sss_with_gf256.py) for the code
 
 Used [GF256 library](https://gf256.readthedocs.io/en/stable/) for making operations over Galois Field(256).
 
@@ -12,7 +21,7 @@ The applet forms 4 shares where the secret can be reconstructed from any 2 share
 By default a secret key is already defiled in the code.
 And reconstruction can be done by using any two shares. By default reconstruction is done using share3 & share4.
 Refer comments within the code for more explanation.<br>
-![main_code](https://github.com/NitishGadangi/cypherock_challenge/blob/master/main_code.jpg?raw=true)
+![main_code](/main_code.jpg)
 
 ## Instructions
 - Clone or download the repository
@@ -29,4 +38,4 @@ python sss_with_gf256.py
 Here is a snippet for output for the default input.<br>
 you can customise the input by editing the inputs within the code.<br>
 Refer comments in the code for more info<br>
-![Output](https://github.com/NitishGadangi/cypherock_challenge/blob/master/output.jpg?raw=true)
+![Output]/output.jpg)
