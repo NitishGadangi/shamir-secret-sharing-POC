@@ -38,4 +38,4 @@ python sss_with_gf256.py
 Here is a snippet for output for the default input.<br>
 you can customise the input by editing the inputs within the code.<br>
 Refer comments in the code for more info<br>
-![Output]/output.jpg)
+![Output](/output.jpg)
