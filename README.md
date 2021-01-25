@@ -2,6 +2,7 @@
 > The following is POC for the final implementation of **IMPLEMENTATION OF DECENTRALIZED CRYPTOGRAPHY USING SHAMIR’S SECRET SHARING ALGORITHM**\
 > Refer [Abstract](https://drive.google.com/file/d/1BwWNukhCzudKV-HLcWjA1MOBU5-4-L9i/view?usp=sharing)\
 > Refer [Presentation](https://docs.google.com/presentation/d/1IfXUM3wsqyomAc2kSH85iHgI3jhYai2Tr9b2mWgTAwA/edit?usp=sharing)\
+> Detailed Research description on [Shamir Secret Sharing Algorithm](https://drive.google.com/file/d/1ApjM_hHWma_SXvs2XNVLmQ1Um_AAEtY2/view?usp=sharing)\
 > Complete Documentation and Codebase (of final implementation) will be opensourced soon.
 
 
