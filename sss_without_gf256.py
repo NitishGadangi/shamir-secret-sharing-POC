@@ -1,5 +1,4 @@
-import random
-# from gf256 import GF256 
+import random #for generating random numbers
 
 def isPrime(x):
     count = 0
@@ -13,22 +12,24 @@ def getPrime(greaterThan):
 	n = random.choice(primes)
 	return n
 
+#for generating the polynomial
 def y_x(a0,a1,x,p):
 	return ((a0+a1*x)%p)
 
-def lagrange(x0,x1,y0,y1):
-	return int(((-x1/(x0-x1))*y0)+((-x0/(x1-x0))*y1))
+#lagranges function used for reconstruction
+def lagrange(x0,x1,y0,y1,p):
+	return int((((-x1/(x0-x1))*y0)+((-x0/(x1-x0))*y1))%p)
 
-def re_construct(share1,share2):
+def re_construct(share1,share2,p):
 	x0=share1[0]
 	x1=share2[0]
 	secret=[]
 	for i in range(1,len(share1)):
-		secret.append(lagrange(x0,x1,share1[i],share2[i]))
+		secret.append(lagrange(x0,x1,share1[i],share2[i],p))
 	print(f"\n\nDecryted Secret: {secret}")
 
 def generate_shares(secret,random_a1):
-	share1=[1]
+	share1=[1] #adding share number as the first element of the list
 	share2=[2]
 	share3=[3]
 	share4=[4]
@@ -44,10 +45,12 @@ def generate_shares(secret,random_a1):
 	print(f"share2: {share2}")
 	print(f"share3: {share3}")
 	print(f"share4: {share4}")
-	re_construct(share3,share4)
+	re_construct(share3,share4,p)
 
-#array of length 30
-secret=[160,147,149,118,149,110,193,165,174,175,163,199,158,188,108,83,98,128,137,111,97,193,167,146,166,113,195,130,173,178]
-print(f"secret: {secret}\n\n")
-#253 is basically a random number chosen such that it is greator than all the the keys above
-generate_shares(secret,253)
+if __name__=="__main__":
+	#list of secret keys
+	#array of length 30
+	secret=[160,147,149,118,149,110,193,165,174,175,163,199,158,188,108,83,98,128,137,111,97,193,167,146,166,113,195,130,173,178]
+	print(f"secret: {secret}\n\n")
+	#253 is basically a random number chosen such that it is greator than all the the keys above
+	generate_shares(secret,253)
